@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:gilroy;
+}
+html,
+body {
+    height:100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.section-1 {
+    height: 100%;
+    width: 100%;
+    
+    .main{
+      height: 100%;
+      background-image: url("images/Avatar.jpg");
+      padding: 1em ;     
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position:center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      .heading{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        h1 {
+        font-size: 10em;
+        margin-bottom: 0.5em;
+        font-family: "Rubik Wet Paint", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: solid red 0.1em;
+        background: linear-gradient(to right, #00ffff, #2563eb, #22d3ee, #1e40af);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+        transition: filter 1.5s ease-in-out;
+      }
+
+      h1:hover
+      {
+        filter: hue-rotate(-30deg) brightness(1.2);
+        cursor: pointer;
+      }
+
+      h2{
+        font-size: 5em;
+        font-family: 'Rubik Wet Paint', system-ui;
+        font-weight: 700;
+        font-style: normal;
+        // letter-spacing: 1em;
+        color: Aqua;
+      }
+      }
+
+      p{
+      margin-top: 2em;
+      font-size: 2em;
+      font-family: "Michroma", serif;
+      font-weight:700;
+      font-style: normal;
+      text-transform: uppercase;
+      color: silver;
+      }
+    }
+
+    .main{
+      box-shadow: 10px 20px 50px rgb(0, 247, 255);
+      transform: translateY(0px);
+    }
+  }
+
+.section-2{
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: white;
+  padding-top: 2em;
+
+  .movies{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1{
+      font-size: 2em;
+      border-bottom: solid 2px white;
+    }
+  }
+  
+  .FRONT-PAGE{
+      margin-top: 2em;
+      // border: solid 2px white;
+      display:flex;
+      flex-direction: column;
+      padding-top: 8em;
+      padding-left: 5em;
+      padding-bottom: 3em;
+      gap: 1em;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70% , rgba(0,0,0,1)100%),url('images/captain.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left center;
+      // -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+      // mask-image: linear-gradient(to right, black 80%, transparent 100%);
+      background-blend-mode: multiply;
+
+      h1{
+        font-family: oswald,sans-serif;
+        font-size: 4em;
+      }
+
+      span{
+        color: #3b72e7;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+      }
+
+      .content{
+        width: 50%;
+        font-size: 1.1em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: white;
+      }
+
+      .bottom-content{
+        button{
+          font-family: oswald,sans-serif;
+          display: inline-block;
+          padding: 0.5em 5em;
+          border-radius: 5px;
+          font-size: 1.1em;
+          font-weight: 700;
+          background: linear-gradient(92.7deg, #1492ff 0%, #0860c4 50%, #eb0066 100%);
+          color: #fff;
+        }
+
+        button:hover{
+          transition: 0.3s ease-in-out  all;
+          transform: scale(1.05);
+        }
+      }
+    }
+}
+
+.section-3{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: white;
+  margin-top: 4em;
+  
+  .heading{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 1em;
+    align-items: center;
+    justify-content: flex-start;
+    
+    span{
+      font-size: 7em;
+      font-family: "Rubik Wet Paint", system-ui;
+      color: red;
+    }
+
+    h1{
+      font-family: oswald,sans-serif;
+    }
+    
+  }
+}
